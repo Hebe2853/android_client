@@ -75,31 +75,66 @@ public final class R {
         public static final int back_btn_selector=0x7f020000;
         /**  3.0 
          */
-        public static final int contacts_item_bg_click=0x7f020009;
-        public static final int contacts_item_bg_default=0x7f02000a;
+        public static final int contacts_item_bg_click=0x7f020011;
+        public static final int contacts_item_bg_default=0x7f020012;
         public static final int general_navbar_backarrow_highlighted=0x7f020001;
         public static final int general_navbar_backarrow_normal=0x7f020002;
-        public static final int green=0x7f020005;
-        public static final int green_click=0x7f020006;
-        public static final int help_item_colcor=0x7f02000b;
+        public static final int green=0x7f02000d;
+        public static final int green_click=0x7f02000e;
+        public static final int help_item_colcor=0x7f020013;
         public static final int ic_launcher=0x7f020003;
-        public static final int next_or_back=0x7f020007;
-        public static final int next_or_back_click=0x7f020008;
+        public static final int next_or_back=0x7f02000f;
+        public static final int next_or_back_click=0x7f020010;
         public static final int panda=0x7f020004;
+        public static final int qcloud_player_icon_audio_vol=0x7f020005;
+        public static final int qcloud_player_icon_audio_vol_mute=0x7f020006;
+        public static final int qcloud_player_icon_brightness=0x7f020007;
+        public static final int qcloud_player_icon_moreoverflow=0x7f020008;
+        public static final int qcloud_player_media_fullscreen_shrink=0x7f020009;
+        public static final int qcloud_player_media_fullscreen_stretch=0x7f02000a;
+        public static final int qcloud_player_media_pause=0x7f02000b;
+        public static final int qcloud_player_media_play=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f090006;
+        public static final int action_settings=0x7f09001e;
+        public static final int adjust_display_panel=0x7f09001b;
         public static final int analogClock1=0x7f090004;
         public static final int button1=0x7f090001;
         public static final int button2=0x7f090000;
         public static final int button3=0x7f090003;
         public static final int button4=0x7f090005;
         public static final int button5=0x7f090002;
+        public static final int current_num=0x7f09001c;
+        public static final int fullscreen=0x7f09000b;
+        public static final int mediacontroller_progress=0x7f090008;
+        public static final int more=0x7f09000c;
+        public static final int pause=0x7f090006;
+        public static final int qcloud_player_brightness_controller=0x7f090018;
+        public static final int qcloud_player_brightness_controller_container=0x7f090017;
+        public static final int qcloud_player_select_stream_container=0x7f090019;
+        public static final int qcloud_player_select_streams_list=0x7f09001a;
+        public static final int qcloud_player_settings_container=0x7f090015;
+        public static final int qcloud_player_stream_name=0x7f09000d;
+        public static final int qcloud_player_volume_controller=0x7f090016;
+        public static final int root=0x7f09000e;
+        public static final int surface_view=0x7f090010;
+        public static final int time=0x7f090009;
+        public static final int time_current=0x7f090007;
+        public static final int title_bar=0x7f090011;
+        public static final int title_icon_1=0x7f090012;
+        public static final int title_icon_2=0x7f090013;
+        public static final int title_icon_3=0x7f090014;
+        public static final int total_num=0x7f09001d;
+        public static final int video_frame=0x7f09000f;
+        public static final int video_src=0x7f09000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_show_time=0x7f030001;
         public static final int edittext=0x7f030002;
+        public static final int qcloud_player_media_controller=0x7f030003;
+        public static final int qcloud_player_select_streams_list_item=0x7f030004;
+        public static final int qcloud_player_video_root=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
