@@ -1,30 +1,22 @@
 package com.example.hebe_test;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.*;
 
-public class ShowTime extends Activity implements OnClickListener
-{
+public class LiveBroadcast extends Activity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) 
-	{
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_show_time);
-		Button back = (Button)findViewById(R.id.button4);
-	    back.setOnClickListener(this);
+		setContentView(R.layout.activity_live_broadcast);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.show_time, menu);
+		getMenuInflater().inflate(R.menu.live_broadcast, menu);
 		return true;
 	}
 
@@ -39,23 +31,4 @@ public class ShowTime extends Activity implements OnClickListener
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	@Override
-	public void onClick(View v) 
-	{
-		// TODO Auto-generated method stub
-		switch(v.getId())
-		{
-			case R.id.button4:
-			{
-				Intent intent = new Intent(ShowTime.this,MainActivity.class);
-				startActivity(intent);
-				break; 
-			}
-		
-		}
-			
-		
-		
-	}
 }
-
