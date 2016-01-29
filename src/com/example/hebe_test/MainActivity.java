@@ -39,10 +39,12 @@ public class MainActivity extends Activity implements OnClickListener
         Button butTime = (Button)findViewById(R.id.button2);
         Button showTime = (Button)findViewById(R.id.button5);
         Button showVersion = (Button)findViewById(R.id.button3);
+        Button showLive = (Button)findViewById(R.id.button_live);
         butDate.setOnClickListener(this);
         butTime.setOnClickListener(this);
         showTime.setOnClickListener(this);
         showVersion.setOnClickListener(this);
+        showLive.setOnClickListener(this);
         
 //        RelativeLayout clockRelativeLayout = (RelativeLayout)getLayoutInflater().inflate(R.layout.edittext,null);
 //        AnalogClock clock1 = new AnalogClock(this);
@@ -119,6 +121,12 @@ public class MainActivity extends Activity implements OnClickListener
 				 //intent.putExtra("store", "from activityMain");
 				 startActivity(intent);
 				 break; 
+			}
+			case R.id.button_live:
+			{
+				Intent intent = new Intent(MainActivity.this,LiveBroadcast.class);
+				startActivity(intent);
+				break;
 			}
 		}
 			

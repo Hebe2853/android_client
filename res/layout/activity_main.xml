@@ -45,4 +45,14 @@
         android:layout_marginTop="64dp"
         android:text="show version" />
 
+    <Button
+        android:id="@+id/button_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="26dp"
+        android:text="show live" />
+
 </RelativeLayout>
