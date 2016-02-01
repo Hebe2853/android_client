@@ -24,7 +24,9 @@ public class LiveBroadcast extends Activity {
 		VideoInfo v1 = new VideoInfo();
 		v1.description="±Í«Â";
 		v1.type=VideoInfo.VideoType.MP4;
-		v1.url="file://storage/sdcard0/data/hh.mp4";
+		//v1.url="file://storage/sdcard0/data/hh.mp4";
+		//v1.url="rtmp://live.hkstv.hk.lxdns.com/live/hks";
+		v1.url="rtmp://live.hkstv.hk.lxdns.com/live/hks";
 		
 		videos.add(v1);
 		VideoInfo v2 = new VideoInfo();
