@@ -5,11 +5,13 @@ import java.util.List;
 
 import com.tencent.qcload.playersdk.ui.UiChangeInterface;
 import com.tencent.qcload.playersdk.ui.VideoRootFrame;
+import com.tencent.qcload.playersdk.util.PlayerListener;
 import com.tencent.qcload.playersdk.util.VideoInfo;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -24,18 +26,20 @@ public class LiveBroadcast extends Activity {
 		VideoInfo v1 = new VideoInfo();
 		v1.description="标清";
 		v1.type=VideoInfo.VideoType.MP4;
-		//v1.url="file://storage/sdcard0/data/hh.mp4";
+		v1.url="file:///storage/sdcard0/Download/hh.mp4";
+		//此处有坑，adnroid的url的地址前面是三个杠
 		//v1.url="rtmp://live.hkstv.hk.lxdns.com/live/hks";
-		v1.url="rtmp://live.hkstv.hk.lxdns.com/live/hks";
+		//v1.url="rtmp://live.hkstv.hk.lxdns.com/live/hks";
 		
 		videos.add(v1);
 		VideoInfo v2 = new VideoInfo();
 		v2.description="高清";
 		v2.type=VideoInfo.VideoType.MP4;
 		v2.url="";
-		videos.add(v2);
+		//videos.add(v2);
 		player.play(videos);
 		//全屏切换
+		player.setListener( new MyPlayerListener());
 		player.setToggleFullScreenHandler(new UiChangeInterface(){
 
 			@Override
@@ -54,7 +58,13 @@ public class LiveBroadcast extends Activity {
 			}
 			
 		});
-		player.release();
+		//Log.e("adr", "fffff-----------check:"+player.getCurrentStatus());
+		if(player.getCurrentStatus()==6)
+		{
+			player.release();
+			Log.e("adr", "fffff-----------check:"+player.getCurrentStatus());
+		}
+		
 	}
 
 	@Override
@@ -74,5 +84,22 @@ public class LiveBroadcast extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+}
+class MyPlayerListener implements PlayerListener
+{
+
+	@Override
+	public void onError(Exception arg0) {
+		// TODO Auto-generated method stub
+		Log.e("Exception", "listener Exception:"+arg0);
+		
+	}
+
+	@Override
+	public void onStateChanged(int arg0) {
+		// TODO Auto-generated method stub
+		Log.e("status", "listener status......."+arg0);
+				
 	}
 }

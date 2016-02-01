@@ -17,7 +17,7 @@ public class ShowTime extends Activity implements OnClickListener
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_show_time);
-		Button back = (Button)findViewById(R.id.button_live);
+		Button back = (Button)findViewById(R.id.button_back);
 	    back.setOnClickListener(this);
 	}
 
@@ -45,7 +45,7 @@ public class ShowTime extends Activity implements OnClickListener
 		// TODO Auto-generated method stub
 		switch(v.getId())
 		{
-			case R.id.button_live:
+			case R.id.button_back:
 			{
 				Intent intent = new Intent(ShowTime.this,MainActivity.class);
 				startActivity(intent);
