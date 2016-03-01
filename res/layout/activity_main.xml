@@ -55,4 +55,13 @@
         android:layout_marginTop="26dp"
         android:text="show live" />
 
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_live"
+        android:layout_below="@+id/button_live"
+        android:layout_marginTop="18dp"
+        android:text="file_to_play" />
+
 </RelativeLayout>
